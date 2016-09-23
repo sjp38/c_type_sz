@@ -13,8 +13,11 @@ int main(void)
 	pr_type_sz(long long);
 	pr_type_sz(float);
 	pr_type_sz(double);
-	pr_type_sz(uint64_t);
 	pr_type_sz(void *);
+	pr_type_sz(uint8_t);
+	pr_type_sz(uint16_t);
+	pr_type_sz(uint32_t);
+	pr_type_sz(uint64_t);
 
 	return 0;
 }
