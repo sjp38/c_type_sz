@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#define pr_type_sz(type)	\
-	printf(#type ": %zu bytes\n", sizeof(type));
+#define pr_type_sz(type)				\
+	printf(#type ": %zu byte", sizeof(type));	\
+	if (sizeof(type) > 1)				\
+		printf("s");				\
+	printf("\n");
 
 int main(void)
 {
